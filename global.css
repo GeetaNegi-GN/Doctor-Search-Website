@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-cabin: Cabin;
+  --font-public-sans: "Public Sans";
+  --font-source-sans-pro: "Source Sans Pro";
+  --font-inria-serif: "Inria Serif";
+  --font-lora: Lora;
+  --font-kreon: Kreon;
+  --font-source-code-pro: "Source Code Pro";
+
+  /* font sizes */
+  --font-size-26xl: 45px;
+  --font-size-31xl: 50px;
+  --font-size-28xl: 47px;
+  --font-size-51xl: 70px;
+  --font-size-21xl: 40px;
+  --font-size-77xl: 96px;
+  --font-size-14xl: 33px;
+  --font-size-11xl: 30px;
+  --font-size-2xl: 21px;
+  --font-size-16xl: 35px;
+  --font-size-36xl: 55px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-royalblue-300: #276ee8;
+  --color-royalblue-200: #2468e3;
+  --color-royalblue-400: #2267e1;
+  --color-royalblue-100: #1367f6;
+  --color-lightsteelblue-100: #ccdafc;
+  --color-gray-100: rgba(0, 0, 0, 0.4);
+  --color-gray-200: rgba(255, 255, 255, 0.96);
+  --color-gray-300: rgba(0, 0, 0, 0.83);
+  --color-darkslateblue: #0741a8;
+
+  /* Paddings */
+  --padding-8xs: 5px;
+
+  /* border radiuses */
+  --br-15xl: 34px;
+  --br-8xl: 27px;
+  --br-13xl: 32px;
+}

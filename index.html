@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Code Pro:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public Sans:wght@200;300;800&display=swap"
+    />
+    
+  
+  </head>
+  <body>
+    <div class="index1">
+      <section class="navbarsection" id="NavBar">
+        <div class="navbar"></div>
+        <div class="docfind">DocFind</div>
+        <div class="menubutton">
+          <a class="home" id="home">Home</a
+          ><a class="services" id="services">Services</a
+          ><a class="about-us" id="aboutUs">About Us</a>
+        </div>
+      </section>
+      <section class="homesection" id="Home" data-scroll-to="homeSection">
+        <div class="home1"></div>
+        <div class="bannerbox">
+          <a class="diagnosicbox" id="diagnosicBox"
+            ><b class="diagnostics">Diagnostics</b>
+            <div class="test-checkups">Test & checkups</div></a
+          ><a class="appointmentbox" id="appointmentBox"
+            ><b class="doctors">Doctors</b>
+            <div class="appointmenttext">Book an appointment</div></a
+          >
+          <div class="bannersearchtext">
+            <div  class="searchbox"></div>
+            <div id="doctor_area" class="text4-parent">
+              <div  class="text4"></div>
+              <input
+                id="selectLoc"
+                class="select-location"
+                type="text"
+                placeholder="Select Location"
+                maxlength="{80}"
+                required
+               
+              />
+            </div>
+            <div  id ="doctor_type" class="text3-parent">
+              <div class="text3"></div>
+              <input
+                id="searchDoc"
+                class="search-doctor"
+                type="text"
+                placeholder="Search Doctor"
+                maxlength="{60}"
+                
+              />
+            </div>
+            <div  class="icon-parent">
+              <div class="icon"></div>
+              <img id ="search_btn" class="iconimg" alt="" src="./public/iconimg@2x.png" />
+            </div>
+          </div>
+          <div class="text2">
+            Discover the best doctor, clinic & hospital nearest to you
+          </div>
+          <b class="text1">Search Doctor</b>
+        </div>
+        <img
+          class="bannerdocimg-icon"
+          alt=""
+          src="./public/bannerdocimg1@2x.png"
+        />
+      </section>
+      <section
+        class="servicesection"
+        id="Services"
+        data-scroll-to="serviceSection"
+      >
+        <img id ="Doctor_service" class="service-icon" alt="" src="./public/service.svg" />
+        <div class="servicedoctext">
+          <img class="dctext1-icon" alt="" src="./public/dctext1.svg" /><img
+            class="dctext2-icon"
+            alt=""
+            src="./public/dctext1.svg"
+          /><img class="dctext3-icon" alt="" src="./public/dctext1.svg" /><img
+            class="dctext4-icon"
+            alt=""
+            src="./public/dctext1.svg"
+          /><b class="surgeon">Surgeon</b><b class="cardio">Cardio</b
+          ><b class="bones">Bones</b><b class="so-on">So On..</b
+          ><img
+            class="doctorimg-icon"
+            alt=""
+            src="./public/doctorimg1@2x.png"
+          /><img
+            class="cardioimg-icon"
+            alt=""
+            src="./public/cardioimg1@2x.png"
+          /><img
+            class="boneimg-icon"
+            alt=""
+            src="./public/boneimg1@2x.png"
+          /><img class="nurseimg-icon" alt="" src="./public/nurseimg1@2x.png" />
+        </div>
+        <div class="servicedocimg">
+          <div class="servicedocbox"></div>
+          <img
+            class="servicedocimg-icon"
+            alt=""
+            src="./public/servicedocimg1@2x.png"
+          />
+        </div>
+        <div class="servicediatext" data-scroll-to="serviceDiaTextContainer">
+          <img class="dctext1-icon" alt="" src="./public/dctext11.svg" /><img
+            class="dctext2-icon"
+            alt=""
+            src="./public/dctext11.svg"
+          /><img class="dctext3-icon" alt="" src="./public/dctext11.svg" /><img
+            class="dctext4-icon"
+            alt=""
+            src="./public/dctext11.svg"
+          /><b class="blood-test">Blood Test</b><b class="ecg">ECG</b
+          ><b class="bp-test">BP Test</b><b class="mri">MRI</b
+          ><img
+            class="syringeimg-icon"
+            alt=""
+            src="./public/syringeimg1@2x.png"
+          /><img class="ecgimg-icon" alt="" src="./public/ecgimg1@2x.png" /><img
+            class="mriimg-icon"
+            alt=""
+            src="./public/mriimg@2x.png"
+          /><img class="bpimg-icon" alt="" src="./public/bpimg@2x.png" />
+        </div>
+        <div class="servicediaimg">
+          <div class="servicediaimg-child"></div>
+          <img
+            class="servicediaimg-icon"
+            alt=""
+            src="./public/servicediaimg@2x.png"
+          />
+        </div>
+        <b class="serviceheading2">Doctors</b
+        ><b class="serviceheading1">Diagnostic Centers</b>
+      </section>
+      <section class="aboutsection" id="about" data-scroll-to="aboutSection">
+        <div id ="AboutSec" class="abouttxt">
+          <p class="were-a-mission-driven">
+            We’re a mission-driven, not-for-profit organization focused on
+            improving the health and well-being of people in hundreds of
+            communities across the country.
+          </p>
+          <p class="were-a-mission-driven">&nbsp;</p>
+          <p class="were-a-mission-driven">
+            We have a bold vision to reimagine health care and how it’s
+            delivered by integrating care throughout a person’s lifetime. Our
+            solutions drive individual, community and national impact.
+          </p>
+        </div>
+        <b class="about-docfind">About DocFind</b>
+      </section>
+      <section class="footersection" id="Footer">
+        <div class="footer"></div>
+        <div class="footertext">
+          <div class="docfind1">2023 DocFind</div>
+          <div class="sociallink">
+            <a class="twitter-1"></a><a class="fb-1"></a><a class="insta-1"></a>
+          </div>
+          <div class="footertext-child"></div>
+          <div class="contact">
+            <p class="email-phone-no"><b>Email & Phone no.</b></p>
+            <p class="were-a-mission-driven">docfind24@gmail.com</p>
+            <p class="were-a-mission-driven">+91 8795400937</p>
+          </div>
+          <div class="footerlink">
+            <a class="about-us1" id="aboutUs1"
+              ><span>About</span><span class="us"> Us</span></a
+            ><a class="services1" id="services1">Services</a
+            ><b class="linktext">Quick Links</b
+            ><a class="homelink" id="homeLink">Home</a>
+          </div>
+          <div class="footertext1">
+            <p class="were-a-mission-driven"><b>DocFind</b></p>
+            <p class="discover-the-best">
+              Discover the best doctors nearest to you
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+
+  </body>
+  <script>
+    $(document).ready(function() {
+      $("#search_btn").click(function() {
+        var doctor_type = $("#searchDoc").val();
+        var doctor_area = $("#selectLoc").val();
+        
+        // Send AJAX request using $.ajax() method
+        $.ajax({
+          url: "webservice.php",
+          type: "POST",
+          data: {
+            search: doctor_type,
+            area: doctor_area
+          },
+          success: function(response) {
+            // Update the content of #Services element with the response data
+            $("#Services").html(response);
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log("Error: " + errorThrown);
+          }
+        });
+      });
+    });
+  </script>
+
+ <!-- <script>
+//jquery
+//id ="Doctor_service"
+    $(document).ready(function(){
+    $("#search_btn").click(function(){
+      //alert("click");
+      var doctor_type = $("#doctor_type").val();
+      var doctor_area = $("#doctor_area").val();
+      console.log(doctor_type, doctor_area);
+
+       $.post("webservice.php",{search: doctor_type,area: doctor_area}
+      ,function(response){
+        console.log();
+          $("#Services").html(response);
+       });
+
+    });
+  });
+-->
+
+<script src="index.js"></script>
+</html>
