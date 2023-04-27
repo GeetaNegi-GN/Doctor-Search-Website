@@ -1,10 +1,14 @@
-
 <?php
 if(isset($_POST['search']) && isset($_POST['area'])) {
     
     $search_param = $_POST['search'];
     $search_area = $_POST['area'];
 
+  if(empty($search_area) || empty($search_param)) {
+        $data = '<b><center>Please fill the details in the input box</center><b/>';
+         echo $data;
+        exit;
+    }
   /* if(empty($search_area) || empty($search_param)) {
         $data["result"] = "False";
         $data["Message"] = "Invalid search parameters";
